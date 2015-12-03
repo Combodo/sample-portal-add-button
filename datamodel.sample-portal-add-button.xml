@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0">
+<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  version="1.0">
   <constants>
   </constants>
   <classes>
@@ -12,4 +13,41 @@
     <profiles>
     </profiles>
   </user_rights>
+  <module_designs>
+    <module_design id="itop-portal" xsi:type="portal">
+      <bricks>
+        <brick id="cis" xsi:type="Combodo\iTop\Portal\Brick\BrowseBrick" _delta="define">
+          <active>yes</active>
+          <rank>7.5</rank>
+          <width>3</width>
+          <title>CIs</title>
+          <levels>
+            <level id="1">
+              <class>FunctionalCI</class>
+              <parent_att />
+              <name_att />
+              <tooltip_att />
+              <title>CIs</title>
+              <actions>
+                <action id="view" />
+              </actions>
+              <levels>
+              </levels>
+            </level>
+          </levels>
+          <browse_modes>
+            <availables>
+              <mode id="list" />
+            </availables>
+            <default>list</default>
+          </browse_modes>
+          <data_loading>full</data_loading>
+          <security>
+            <denied_profiles />
+            <allowed_profiles />
+          </security>
+        </brick>
+      </bricks>
+    </module_design>
+  </module_designs>
 </itop_design>
