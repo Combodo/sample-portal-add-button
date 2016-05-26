@@ -9,8 +9,8 @@ SetupWebPage::AddModule(
 	array(
 		// Identification
 		//
-		'label' => 'Sample Portal (add button)',
-		'category' => 'business',
+		'label' => 'Sample Portal (add a quick new user request button)',
+	'category' => 'business',
 
 		// Setup
 		//

@@ -1,52 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  version="1.0">
-  <constants>
-  </constants>
-  <classes>
-  </classes>
-  <menus>
-  </menus>
-  <user_rights>
-    <groups>
-    </groups>
-    <profiles>
-    </profiles>
-  </user_rights>
+<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0">
   <module_designs>
     <module_design id="itop-portal" xsi:type="portal">
       <bricks>
-        <brick id="cis" xsi:type="Combodo\iTop\Portal\Brick\BrowseBrick" _delta="define">
-          <active>yes</active>
-          <rank>7.5</rank>
-          <width>3</width>
-          <title>CIs</title>
-          <levels>
-            <level id="1">
-              <class>FunctionalCI</class>
-              <parent_att />
-              <name_att />
-              <tooltip_att />
-              <title>CIs</title>
-              <actions>
-                <action id="view" />
-              </actions>
-              <levels>
-              </levels>
-            </level>
-          </levels>
-          <browse_modes>
-            <availables>
-              <mode id="list" />
-            </availables>
-            <default>list</default>
-          </browse_modes>
-          <data_loading>full</data_loading>
-          <security>
-            <denied_profiles />
-            <allowed_profiles />
-          </security>
-        </brick>
+		  <brick id="quick-new-user-request" xsi:type="Combodo\iTop\Portal\Brick\CreateBrick" _delta="define">
+			<active>true</active>
+			<rank>
+				<default>70</default>
+			</rank>
+			<width>4</width>
+			<modal>true</modal>
+			<title>
+				<default>Brick:Portal:QuickNewUserRequest:Title</default>
+			</title>
+			<visible>
+				<home>false</home>
+			</visible>
+			<decoration_class>
+				<default>fa fa-bolt fa-2x</default>
+			</decoration_class>
+			<!-- Class that will be create created with the form -->
+			<class>UserRequest</class>
+			<rules>
+				<rule id="contact-to-userrequest"/>
+			</rules>
+		</brick>
       </bricks>
     </module_design>
   </module_designs>
