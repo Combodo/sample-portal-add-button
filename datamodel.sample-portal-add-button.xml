@@ -17,7 +17,7 @@
 				<home>false</home>
 			</visible>
 			<decoration_class>
-				<default>fa fa-bolt fa-2x</default>
+				<default>fa fa-bolt fa-2x fa-fw</default>
 			</decoration_class>
 			<!-- Class that will be create created with the form -->
 			<class>UserRequest</class>
